@@ -17,6 +17,9 @@
     h1 { margin:0; font:700 29px Georgia,serif; }
     p { margin:12px auto 0; max-width:340px; color:var(--muted); font-size:14px; line-height:1.65; }
     .note { margin-top:26px; padding-top:20px; border-top:1px solid var(--line); font-size:12px; }
+    nav { display:flex; justify-content:center; flex-wrap:wrap; gap:8px 16px; margin-top:24px; }
+    nav a { color:var(--green); font-size:12px; font-weight:700; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
     .error .check { color:#a94438; background:#fff0ec; }
   </style>
 </head>
@@ -26,6 +29,7 @@
     <div class="check" aria-hidden="true">✓</div>
     <h1 id="title">E-posta adresin doğrulandı</h1>
     <p id="message">PatiCare uygulamasına dönerek e-posta adresin ve şifrenle giriş yapabilirsin.</p>
+    <nav aria-label="Yasal ve destek bağlantıları"><a href="privacy.html">Gizlilik Politikası</a><a href="account-deletion.html">Hesap Silme</a><a href="mailto:paticare.destek@gmail.com">Destek</a></nav>
     <p class="note">Bu pencereyi güvenle kapatabilirsin.</p>
   </main>
   <script>

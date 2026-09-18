@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#33735f">
+  <title>PatiCare | Hesap Silme</title>
+  <meta name="description" content="PatiCare hesabı ve ilişkili veriler için silme talebi">
+  <style>
+    :root { color-scheme:light; --green:#33735f; --ink:#26332f; --muted:#66746d; --line:#e2e8e3; --danger:#a94438; --soft:#f4f7f4; }
+    * { box-sizing:border-box; } body { margin:0; color:var(--ink); background:#f7f8f5; font-family:Arial,Helvetica,sans-serif; }
+    header { padding:24px; border-bottom:1px solid var(--line); background:#fff; } .brand { width:min(760px,100%); display:flex; align-items:center; gap:10px; margin:auto; color:var(--ink); text-decoration:none; font:700 21px Georgia,serif; }
+    .mark { width:36px; height:36px; display:grid; place-items:center; border-radius:12px 12px 12px 5px; color:#fff; background:var(--green); font:italic 700 23px Georgia,serif; }
+    main { width:min(760px,calc(100% - 32px)); margin:32px auto; padding:clamp(24px,5vw,52px); border:1px solid var(--line); border-radius:22px; background:#fff; box-shadow:0 16px 50px #2646380d; }
+    .eyebrow { margin:0 0 8px; color:var(--danger); letter-spacing:.09em; font-size:11px; font-weight:800; } h1 { margin:0 0 12px; font:700 clamp(30px,5vw,42px) Georgia,serif; } h2 { margin:31px 0 10px; font:700 21px Georgia,serif; }
+    p,li { color:var(--muted); font-size:14px; line-height:1.75; } ol,ul { padding-left:22px; } a { color:var(--green); }
+    .method { margin-top:20px; padding:20px; border:1px solid var(--line); border-radius:15px; background:var(--soft); }
+    .request { display:inline-flex; align-items:center; justify-content:center; margin-top:12px; padding:13px 18px; border-radius:11px; color:#fff; background:var(--danger); font-size:13px; font-weight:800; text-decoration:none; }
+    .warning { margin-top:26px; padding:15px 17px; border-radius:12px; color:#78564f; background:#fff3ef; }
+    footer { margin-top:38px; padding-top:22px; border-top:1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <header><a class="brand" href="index.html"><span class="mark">p</span><span>PatiCare</span></a></header>
+  <main>
+    <p class="eyebrow">HESAP VE VERİ KONTROLÜ</p>
+    <h1>PatiCare hesabını silme</h1>
+    <p>Hesabınızı ve hesapla ilişkili verileri kalıcı olarak silebilir veya silme talebi gönderebilirsiniz. Hesap silme işlemi geri alınamaz.</p>
+
+    <section class="method">
+      <h2>Uygulama içinden anında silme</h2>
+      <ol>
+        <li>PatiCare hesabınıza giriş yapın.</li>
+        <li>Ayarlar → Hesabımı sil bölümünü açın.</li>
+        <li>Onay alanına <b>SİL</b> yazın.</li>
+        <li>Hesabımı kalıcı olarak sil butonuna basın.</li>
+      </ol>
+      <p>Bu işlem Supabase kimlik doğrulama hesabını ve o cihazdaki PatiCare sağlık kayıtlarını, hatırlatmaları ve belge listesini temizler.</p>
+    </section>
+
+    <section class="method">
+      <h2>E-posta ile silme talebi</h2>
+      <p>Uygulamaya erişemiyorsanız aşağıdaki düğmeyle talep gönderebilirsiniz. Talebi, mümkünse PatiCare hesabınızda kullandığınız e-posta adresinden gönderin ve şifrenizi kesinlikle paylaşmayın.</p>
+      <a class="request" href="mailto:paticare.destek@gmail.com?subject=PatiCare%20Hesap%20Silme%20Talebi&body=Merhaba%2C%0A%0APatiCare%20hesabimin%20ve%20hesapla%20iliskili%20verilerin%20silinmesini%20talep%20ediyorum.%0A%0AHesap%20e-posta%20adresim%3A%20%0A%0ANot%3A%20Sifrenizi%20bu%20mesaja%20yazmayin.">Hesap silme talebi gönder</a>
+      <p>Kimlik doğrulamasından sonra talep en geç 30 gün içinde sonuçlandırılır.</p>
+    </section>
+
+    <h2>Silinen bilgiler</h2>
+    <ul>
+      <li>Supabase üzerinde tutulan kullanıcı hesabı, e-posta ve oturum bilgileri.</li>
+      <li>Uygulama içinden silme yapıldığında ilgili cihazdaki sağlık kayıtları, hatırlatmalar ve belge listesi.</li>
+    </ul>
+
+    <h2>Cihazdaki yerel bilgiler</h2>
+    <p>E-posta yoluyla yapılan uzaktan hesap silme işlemi cihazınıza erişemez. Cihazdaki yerel bilgileri kaldırmak için PatiCare uygulamasını kaldırın veya cihaz ayarlarından uygulama verilerini temizleyin.</p>
+
+    <p class="warning">Hesabınız silindikten sonra aynı e-posta adresiyle yeniden hesap oluşturabilirsiniz; önceki kayıtlar geri yüklenmez.</p>
+    <footer><p><a href="index.html">Ana sayfa</a> · <a href="privacy.html">Gizlilik Politikası</a> · <a href="mailto:paticare.destek@gmail.com">Destek</a></p></footer>
+  </main>
+</body>
+</html>
